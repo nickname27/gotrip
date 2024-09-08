@@ -1,0 +1,76 @@
+.catalog__wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 53px;
+}
+
+.catalog__title {
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #3E8989;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cards__wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.card__img {
+    background: #EFEFEF;
+    max-width: 263px;
+    width: 100%;
+    height: 297px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__text {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    transition: 0.3s;
+}
+
+.card:hover .card__text{
+    color: #B4436C;
+}
+
+
+@media screen and (max-width:1140px) {
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .card{
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .catalog__wrap{
+        gap: 30px;
+    }
+    .cards__wrap{
+        flex-direction: column;
+        gap: 30px;
+    }
+}
